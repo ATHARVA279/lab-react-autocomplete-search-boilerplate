@@ -3,18 +3,17 @@
   margin-top: 50px;
 }
 
-.search-container {
-  position: relative;
-  display: inline-block;
+input {
+  margin-bottom: 10px; /* Adjust the spacing between input and datalist */
 }
 
-datalist.show {
+datalist {
   position: absolute;
   top: 100%;
   left: 0;
   display: block;
 }
 
-datalist.hide {
-  display: none;
+button {
+  margin-top: 10px; /* Adjust the spacing between datalist and button */
 }
