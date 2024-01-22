@@ -22,15 +22,15 @@ function App() {
   }
   return (
     <div className='main'>
-    <h1>Search Box</h1>
-    <input type="text" onChange={handleChange}  onKeyDown={handleEscape}  list='suggest' />
-      <datalist id='suggest' >
-        {getSuggestion && dropDown.map((el,i)=>(
-          <option key={i} value={el.name}></option>
-        ))}
-      </datalist>
-   <button>Search</button>
-  </div>
+      <h1>Search Box</h1>
+      <div className="search-container">
+        <input type='text' onChange={handleChange} onKeyDown={handleEscape} list='suggest'/>
+        <datalist id='suggest' className={getSuggestion?'show':'hide'}>
+          {getSuggestion && dropDown.map((el, i) => (<option key={i} value={el.name}></option>))}
+        </datalist>
+      </div>
+      <button>Search</button>
+    </div>
   )
 }
 
