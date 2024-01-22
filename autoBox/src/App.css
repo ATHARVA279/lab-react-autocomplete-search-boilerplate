@@ -2,18 +2,18 @@
   text-align: center;
   margin-top: 50px;
 }
-
-input {
-  margin-bottom: 10px; /* Adjust the spacing between input and datalist */
+.search-container {
+  position: relative;
+  display: inline-block;
 }
 
-datalist {
+datalist.show {
   position: absolute;
   top: 100%;
   left: 0;
   display: block;
 }
 
-button {
-  margin-top: 10px; /* Adjust the spacing between datalist and button */
+datalist.hide {
+  display: none;
 }
